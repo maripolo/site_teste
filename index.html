@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 115px 200px;
+  background-color: red;
+}
+
+h1{
+    color: pink;
+
+}
+
+</style>
+</head>
+<body>
+
+<h1>Oi, me dá o cú?</h1>
+<button class="button"> Sim </button>
+<button class="button" onmouseover="moveButton(this)">Nao</button>
+
+<script>
+    function moveButton(x) {
+        marginX = Math.floor(Math.random()*600)
+        marginY = Math.floor(Math.random()*600)
+
+        x.style.margin = marginY.toString() + 'px ' + marginX.toString() + 'px'
+    }
+</script>
+</body>
+</html>
